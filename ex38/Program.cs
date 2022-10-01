@@ -28,7 +28,7 @@ double[] InitArray(int demension)
     Random rnd = new Random();
     for (int i = 0; i < demension; i++)
     {
-        arr[i] = rnd.Next(1, 100);
+        arr[i] = rnd.Next(-100, 100);
     }
     return arr;
 }
@@ -45,7 +45,7 @@ Console.Clear();
 int ardemension = ReadData("Введите количество элементов массива: ");
 double[] arr = InitArray(ardemension);
 PrintArray(arr);
-double max = 0;
+double max = -100;
 double min = 100;
 for (int i = 0; i < arr.Length; i++)
 {
